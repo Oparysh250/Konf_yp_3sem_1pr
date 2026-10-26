@@ -1,0 +1,8 @@
+python - <<'PY'
+import zipfile, pathlib
+pathlib.Path("vfs").mkdir(exist_ok=True)
+with zipfile.ZipFile("vfs/deep.zip", "w") as zf:
+    zf.writestr("readme.txt", "Добро пожаловать!\n")
+    zf.writestr("dir/a.txt", "строка1\nстрока2\nпривет\n")
+    zf.writestr("dir/sub/b.txt", "base64:SGVsbG8sIGJhc2U2NCE=\n")
+PY
