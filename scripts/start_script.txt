@@ -1,0 +1,11 @@
+# Стартовый скрипт варианта 14
+ls
+cd dir
+ls
+du .
+tail -n 2 a.txt
+chmod 600 a.txt
+ls
+cal
+this-command-does-not-exist
+exit
